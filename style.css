@@ -1,8 +1,68 @@
+body {
+  background-color: hsl(228, 45%, 44%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: white;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  /* color: hsl(228, 45%, 44%); */
+  color: wheat;
+}
+
+.title_container {}
+
+.title {
+  display: flex;
+  border: 1px solid white;
+  max-width: 600px;
+  max-height: 160px;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.title_text p {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  border: 1px solid;
+  color: white;
+  width: 130px;
+  height: 130px;
+}
+
+.count_box {
+  border: 1px solid;
+  background-color: white;
+  margin: 15px;
+  /* padding: 40px; */
+  max-height: 130px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+}
+
+.count_box p {
+  font-size: 15px;
+  /* margin: 0; */
+  text-align: center;
+  margin: 0;
+  margin-top: 10px;
+}
+
+p.count {
+  font-size: 50px;
+}
+
+.image_container {
+  position: absolute;
+  left: 50%;
+  height: 50%;
 }
