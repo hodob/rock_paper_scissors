@@ -161,6 +161,7 @@ p.count {
 .paper_border {
   border: 10px solid yellow;
   position: absolute;
+  /* 314-60 */
   left: 254px;
   top: -60px;
   border-radius: 50%;
