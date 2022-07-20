@@ -1,5 +1,7 @@
 body {
   background-color: hsl(228, 45%, 44%);
+  padding: 0;
+  margin: 0;
 }
 
 .attribution {
@@ -13,45 +15,54 @@ body {
   color: wheat;
 }
 
-.title_container {}
+.full_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
+  justify-content: space-between;
+  margin: 20px;
+}
 
 .title {
+  position: relative;
   display: flex;
   border: 1px solid white;
   max-width: 600px;
   max-height: 160px;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  /* width: 50%; */
+  width: 100vh;
+  margin-top: 5vh;
 
+}
+
+@media screen and (max-width: 600px) {
+  .title {
+    width: 100%;
+  }
 }
 
 .title_text p {
   font-size: 30px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
   border: 1px solid;
   color: white;
   width: 130px;
   height: 130px;
+  margin: 0;
 }
 
 .count_box {
   border: 1px solid;
   background-color: white;
-  margin: 15px;
-  /* padding: 40px; */
   max-height: 130px;
   width: 130px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-around; */
 }
 
 .count_box p {
   font-size: 15px;
-  /* margin: 0; */
   text-align: center;
   margin: 0;
   margin-top: 10px;
@@ -61,8 +72,99 @@ p.count {
   font-size: 50px;
 }
 
-.image_container {
+/* .image_container img {
+  position: relative;
+} */
+
+.triangle {
+  position: relative;
+  /* width="314" height="278" */
+}
+
+.rock {
   position: absolute;
-  left: 50%;
-  height: 50%;
+  left: 133px;
+  top: 254px;
+
+  border: 1px solid red;
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+
+.rock_background {
+  background: url('images/icon-rock.svg') center center no-repeat;
+  /* width="48" height="48"> */
+  position: absolute;
+  /* 167-55 = 112 */
+  left: 112px;
+  /* 288-55=233 */
+  top: 233px;
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+
+.rock_border {
+  border: 10px solid red;
+  /* width="48" height="48"> */
+  position: absolute;
+  /* 157-55 = 102 */
+  left: 102px;
+  /* 278-55=223 */
+  top: 223px;
+  /* border: 10px solid red; */
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 3px 5px 0px inset;
+}
+
+.scissors_background {
+  background: url('images/icon-scissors.svg') center center no-repeat;
+  position: absolute;
+  /* width="51" height="58" */
+  left: -50px;
+  top: -50px;
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+
+.scissors_border {
+  border: 10px solid rgba(117, 117, 238, 0.822);
+  position: absolute;
+  left: -60px;
+  top: -60px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 3px 5px 0px inset;
+
+}
+
+.paper_background {
+  background: url('images/icon-scissors.svg') center center no-repeat;
+  position: absolute;
+  /* 314-50 */
+  left: 264px;
+  top: -50px;
+  border-radius: 50%;
+  background-color: white;
+  width: 100px;
+  height: 100px;
+}
+
+.paper_border {
+  border: 10px solid yellow;
+  position: absolute;
+  left: 254px;
+  top: -60px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 3px 5px 0px inset;
 }
